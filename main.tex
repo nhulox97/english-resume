@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[1pt,a4paper,verdana]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+
+\usepackage[utf8x]{inputenc}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Sergio Alberto} % Your first name
+\familyname{Bernal Cisneros} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+
+\title{Curriculum Vitae}
+\address{Col. Vista Hermosa - 85}{Estanzuelas, Usulután}
+\mobile{+503 7062-2325}
+\email{sergiobernal909@gmail.com}
+%\homepage{}% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\section{Personal information}
+\cvdoublecolumn{\cvitem{Age: }{{24}}}
+{\cvitem{Civil status: }{{Single}}}
+\cvdoublecolumn{\cvitem{NIT: }{{1210-170997-101-4}}}
+{\cvitem{DUI: }{{05601382-3}}}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Career goals}
+\cvitem{}{As a self-motivated and responsible person, I believe in a sentence: "The riskiest thing is not to take risks." So I love solving problems, taking risks, trying to be bold and exploring in the technological field. At the same time, I look forward to challenging and growth-oriented tasks that help demonstrate the best of my ability to achieve the goal of the job. Willing to work as a team and guide others if necessary, always open to suggestions, observations and advice.}
+
+\section{Education}
+
+\cventry{2016 - Today}{Computer Systems Engineering} {Universidad de Oriente}
+{Faculty of Engineering and Architecture} {\textit {currently in the 9th semester}} {Expecting to graduate in 2023}  % Arguments not required can be left empty
+\cventry{2013 - 2015}{Commercial Vocational Technical Baccalaureate}{Accountant}{Instituto Nacional Ernesto Flores}{INEF}{Ciudad El Triunfo, Usulután}
+
+
+\section{Technical skills}
+
+\cvitem{Programming languages}{{Javascript}, {Python}, {Kotlin}, {C++}, {Bash}, {Typescript}
+{C\#}}
+\cvitem{Web}{HTML, CSS, Javascript, \LaTeX}
+\cvitem{OS}{Linux (Debian based)}
+\cvitem{Platforms/ Frameworks}{Android, Express, Flutter(Basics), Node.js,
+Flask, React.js, Heroku, Vercel, Mongoose, Sequelize, Gson, Airbnb (Animations),
+Volley, TypeORM, NestJS, SwaggerUI, OAuth}
+\cvitem{Databases}{ PostgreSQL, Firebase, MongoAtlas, MySQL, Redis }% * <bit0428@iit.du.ac.bd> 2014-10-21T07:54:10.585Z:
+%
+% good
+%
+\cvitem{Development tools}{Vim, Zsh, VSCode, pgAdmin4, Robo3T, Postman, AndroidStudio, Pycharm,
+Dbeaver, Insomnia}
+\cvitem{Version control tool}{GitHub - https://github.com/nhulox97. GitLab - https://gitlab.com/nhulox97}
+\cvitem{Stacks and concepts} {MERN, Structured Programming, Object Oriented Programming, Responsive
+Design, Mobile Application Programming, MVC, OpenAPI, REST, API-REST}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section {Extracurricular activities}
+
+\cvitem {2017-Present} {Instructor of the Faculty of Engineering and Architecture, in the areas of \textit {Mathematics, Physics, Statistics, Computer Programming}}
+\cvitem {2017} {Speaker - 3rd Research Day - UNIVO}
+\cvitem {2019} {Winner of the national DIES (Internet Day in El Salvador) sponsored by Connection}
+\cvitem {2019} {Top-5 of CONINFO 2019 sponsored by ASPROC}
+
+
+\section{Certifications and courses}
+
+\cvitem{2017}{Algebra course - Faculty of Engineering and Architecture}
+
+\cvitem{2018}{Software Development Foundamentals -  \textsc{Microsoft} \textcopyright  Technology Association}
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section {Associations}
+\subsection {Mathematics Division - Faculty of Engineering and Architecture}
+\cvitem {Designation} {Senior Instructor}
+\cvitem {Role} {Instructor - Reinforcement for students with academic deficits}
+
+\section{References}
+
+\cvdoublecolumn{\cvreference{José Antonio Fuentes}
+	{Degree in Mathematics, Universidad de El Salvador}
+	{Full time teacher}
+	{Universidad de Oriente}
+	{}
+	{jfuentes@univo.edu.sv}
+	{+503 7498-7037}%
+}
+{\cvreference{Fiorella Yolibette Díaz}
+	{Degree in Mathematics, Universidad de El Salvador}
+	{Full time teacher}
+	{Universidad de Oriente}
+	{}
+	{fdiaz@univo.edu.sv}
+	{+503 7067-7143}
+}
+
+\cvdoublecolumn{\cvreference{Herbert Benjamín Chávez}
+	{Computer Science Engineer, Universidad De Oriente}
+	{Systems Engineering Coordinator}
+	{Universidad de Oriente}
+	{}
+	{hchavez@univo.edu.sv}
+	{+503 7989-8070}
+}
+{\cvreference{}
+	{}
+	{}
+	{}
+	{}
+	{}
+	{}
+}
+
+
+
+
+
+\end{document}
